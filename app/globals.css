@@ -95,7 +95,7 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02
 .lead { font-size: 17px; color: var(--muted); max-width: 520px; margin: 20px 0 28px; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .photo {
-  aspect-ratio: 5 / 5.2; border-radius: var(--radius); overflow: hidden;
+  aspect-ratio: 1 / 1; border-radius: 50%; overflow: hidden;  /* round, like a LinkedIn profile photo */
   background: var(--photo-bg); border: 1px solid var(--photo-border);
   display: flex; align-items: center; justify-content: center; color: var(--photo-ink);
 }
