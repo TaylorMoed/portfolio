@@ -17,7 +17,7 @@ export const site = {
   ],
 
   // Set to e.g. "/photo.jpg" once you add an image to public/
-  photo: "/photo.jpg" as string | null,
+  photo: "/headshot.jpg" as string | null,
 
   // Headline: the highlighted words get a hand-drawn underline
   headline: { before: "Hi, I\u2019m Taylor. I build full-stack apps and", highlight: "computer-vision", after: "projects." },
