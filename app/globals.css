@@ -58,7 +58,7 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 15px;
+  padding: 10px 16px; border-radius: 8px; font-weight: 600; font-size: 15px; line-height: 1.4; font-family: inherit;
   border: 1px solid transparent; transition: transform .15s, background .15s;
 }
 .btn:hover { transform: none; }
@@ -79,8 +79,8 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .logo { font-family: var(--font-display), sans-serif; font-weight: 700; font-size: 18px; }
 .nav nav { display: flex; align-items: center; gap: 24px; font-size: 15px; }
-.nav nav a:not(.btn) { color: var(--muted); }
-.nav nav a:not(.btn):hover { color: var(--ink); }
+.nav nav .nav-link { color: var(--muted); }
+.nav nav .nav-link:hover { color: var(--ink); }
 
 /* Hero */
 .hero {
@@ -152,7 +152,7 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02
 @media (max-width: 800px) {
   .grid { grid-template-columns: 1fr; }
   .nav nav { gap: 14px; font-size: 14px; }
-  .nav nav a:not(.btn) { display: none; }
+  .nav nav .nav-link { display: none; }  /* section links only; the resume menu's links stay */
 }
 /* Only phones stack the hero and About sections */
 @media (max-width: 560px) {

@@ -27,7 +27,7 @@ export const site = {
 
   about: [
     "I’m a CS senior at Prairie View A&M University with a Data Science concentration, graduating in May 2027. I like projects where software meets the physical world — like teaching a camera to read a chessboard — and building tools people actually use day to day.",
-    "For nearly three years I worked part-time on the sales floor at adidas while taking a full course load, which taught me to manage my time and stay reliable under pressure.",
+    "For nearly three years I worked part-time on the sales floor at Adidas while taking a full course load, which taught me to manage my time and stay reliable under pressure.",
     "Coursework: Data Structures & Algorithms, Software Engineering, Operating Systems, Database Systems, Machine Learning, Information Retrieval.",
   ],
 
