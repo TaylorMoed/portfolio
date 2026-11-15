@@ -284,6 +284,15 @@ a:hover > .arrow { transform: translateX(3px); }
 .card-media > * { transition: transform .5s ease; }
 .card:hover .card-media > * { transform: scale(1.015); }
 
+/* Skeleton preview for projects whose visuals aren't designed yet */
+@keyframes shimmer { 0%, 100% { opacity: .45; } 50% { opacity: .9; } }
+.skeleton { width: 100%; height: 100%; padding: clamp(18px, 4%, 36px); display: flex; flex-direction: column; gap: 16px; position: relative; }
+.skeleton-grid { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; min-height: 120px; }
+.skeleton-tile, .skeleton-line { display: block; background: #2b2927; border-radius: 8px; animation: shimmer 1.8s ease-in-out infinite; }
+.skeleton-lines { display: grid; gap: 8px; }
+.skeleton-line { height: 10px; border-radius: 5px; }
+.skeleton-note { font-size: 11px; margin-top: -4px; color: var(--subtle); }
+
 /* ================= Project carousel ================= */
 .carousel-track {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
@@ -351,6 +360,7 @@ a:hover > .arrow { transform: translateX(3px); }
   .reveal { opacity: 1; transform: none; }
   .scribble path { stroke-dashoffset: 0; }
   .hero h1 .w { opacity: 1; }
+  .skeleton-tile, .skeleton-line { opacity: .6; }
   h2.lift > span { transform: none; }
   .scroll-text .sw { color: inherit; }
 }

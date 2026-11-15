@@ -67,7 +67,19 @@ export default function ProjectCard({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={project.image} alt={project.title} />
         ) : (
-          <span className="placeholder">[ {project.placeholder} ]</span>
+          // Layout not designed yet: a quiet skeleton instead of placeholder text
+          <div className="skeleton" role="img" aria-label={`${project.title} preview coming soon`}>
+            <div className="skeleton-grid">
+              {Array.from({ length: 6 }, (_, i) => (
+                <span key={i} className="skeleton-tile" style={{ animationDelay: `${i * 120}ms` }} />
+              ))}
+            </div>
+            <div className="skeleton-lines">
+              <span className="skeleton-line" style={{ width: "62%" }} />
+              <span className="skeleton-line" style={{ width: "38%" }} />
+            </div>
+            <span className="skeleton-note mono">preview in progress</span>
+          </div>
         )}
       </div>
       <div className="card-body">
@@ -80,7 +92,8 @@ export default function ProjectCard({
           ))}
         </ul>
         <div className="card-links">
-          {project.links.map((l) => (
+          {/* Links still set to "#" (code not public yet) stay hidden until they point somewhere */}
+          {project.links.filter((l) => l.href && l.href !== "#").map((l) => (
             <a key={l.label} href={l.href} target="_blank" rel="noreferrer">
               {l.label} <span className="arrow">&rarr;</span>
             </a>
