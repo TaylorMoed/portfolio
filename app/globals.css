@@ -134,6 +134,18 @@ h1, h2, h3 { font-family: var(--font-display), sans-serif; letter-spacing: -0.02
 .skills { margin: 0; display: grid; gap: 18px; }
 .skills dd { margin: 0; font-weight: 500; font-size: 15px; }
 
+/* Experience */
+.experience-section { padding-top: 72px; }
+.jobs { display: grid; gap: 0; }
+.job { padding: 22px 0; border-top: 1px solid var(--line); }
+.job:last-child { border-bottom: 1px solid var(--line); }
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.job h3 { font-size: 20px; }
+.job-company { margin: 2px 0 0; color: var(--muted); }
+.job-dates { font-size: 13px; color: var(--subtle); white-space: nowrap; }
+.job-points { margin: 12px 0 0; padding-left: 18px; color: var(--muted); max-width: 760px; }
+.job-points li { margin: 6px 0; }
+
 /* Contact */
 #contact { padding-top: 56px; }
 .contact {

@@ -32,9 +32,31 @@ export const site = {
 
   skills: [
     { label: "Languages", items: ["TypeScript", "JavaScript", "Python", "Java", "C/C++", "SQL", "Swift"] },
-    { label: "Frameworks & libraries", items: ["React", "Node.js", "Tauri", "SwiftUI", "Pandas", "scikit-learn", "OpenCV"] },
+    { label: "Frameworks & libraries", items: ["React", "Node.js", "SwiftUI", "Pandas", "scikit-learn", "OpenCV"] },
     { label: "Backend & data", items: ["REST APIs", "PostgreSQL", "Supabase", "OCR"] },
     { label: "Tools", items: ["Git", "GitHub", "Vercel", "VS Code", "Xcode"] },
+  ],
+
+  experience: [
+    {
+      role: "AI Trainer",
+      company: "Handshake AI",
+      dates: "Jan 2026 – Aug 2026",
+      points: [
+        "Stress-tested frontier AI models on computer science and coding problems, grading responses for correctness, reasoning, and code quality against strict evaluation rubrics.",
+        "Authored hard prompts and expert reference solutions designed to break models, surfacing failure modes that fed directly into AI training data.",
+      ],
+    },
+    {
+      role: "Sales Floor Associate",
+      company: "Adidas",
+      dates: "Aug 2023 – Jun 2026",
+      points: [
+        "Delivered fast, accurate service in a high-volume retail store, matching customers to products by fit, use case, and live inventory.",
+        "Kept the floor stocked and launch-ready to brand standards through product launches and holiday peaks, the store’s highest-traffic periods.",
+        "Held a part-time role for nearly three years while carrying a full-time Computer Science course load.",
+      ],
+    },
   ],
 
   contact:

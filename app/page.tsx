@@ -117,10 +117,34 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="experience" className="container section experience-section">
+          <Reveal className="section-head">
+            <h2 className="lift"><span><span className="idx mono">03</span>Experience</span></h2>
+          </Reveal>
+          <div className="jobs">
+            {site.experience.map((job, i) => (
+              <Reveal key={job.company} delay={i * 90} className="job">
+                <div className="job-head">
+                  <div>
+                    <h3>{job.role}</h3>
+                    <p className="job-company">{job.company}</p>
+                  </div>
+                  <span className="job-dates mono">{job.dates}</span>
+                </div>
+                <ul className="job-points">
+                  {job.points.map((pt) => (
+                    <li key={pt.slice(0, 24)}>{pt}</li>
+                  ))}
+                </ul>
+              </Reveal>
+            ))}
+          </div>
+        </section>
+
         <section id="contact" className="container section">
           <Reveal className="contact">
             <div>
-              <h2 className="lift"><span><span className="idx mono">03</span>Let&rsquo;s talk.</span></h2>
+              <h2 className="lift"><span><span className="idx mono">04</span>Let&rsquo;s talk.</span></h2>
               <p>{site.contact}</p>
             </div>
             <div className="contact-side">
