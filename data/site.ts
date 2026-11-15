@@ -13,7 +13,6 @@ export const site = {
   resumes: [
     { label: "Software Engineering", href: "/resumes/Taylor_Moed_Software_Engineer.pdf" },
     { label: "Data Engineering", href: "/resumes/Taylor_Moed_Data_Engineering.pdf" },
-    { label: "Internships", href: "/resumes/Taylor_Moed_Internships.pdf" },
   ],
 
   // Set to e.g. "/photo.jpg" once you add an image to public/
